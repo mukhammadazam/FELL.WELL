@@ -165,6 +165,7 @@
 }
 .img {
   padding-top: 50px;
+  padding-bottom: 84px;
   position: relative;
 }
 .img__png {
@@ -200,6 +201,31 @@
     left: 220px;
   }
 }
+.device {
+  padding-top: 50px;
+  position: relative;
+}
+.device__title {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 126%;
+  text-align: center;
+  color: #fff;
+}
+.device__leni {
+  color: #00D5E4;
+}
+.device__img {
+  position: absolute;
+  top: -320px;
+  left: -245px;
+}
+
 * {
   margin: 0;
   text-decoration: none;
