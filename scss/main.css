@@ -91,6 +91,7 @@
     height: 100vh;
     width: 100vw;
     right: -20px;
+    z-index: 11111111;
   }
   .nav__list--item a {
     font-size: 24px;
@@ -199,6 +200,15 @@
     position: static;
     top: -50px;
     left: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .img__svg {
+    max-width: 180px;
+    width: 100%;
+    position: absolute;
+    top: 190px;
+    left: 300px;
   }
 }
 body {
