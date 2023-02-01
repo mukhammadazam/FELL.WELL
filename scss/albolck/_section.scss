@@ -118,6 +118,7 @@
     line-height: 126%;
     text-align: center;
     color: $white-color;
+    padding-bottom: 30px;
   }
   &__leni{
     color: $span-coor;
@@ -126,5 +127,11 @@
     position: absolute;
     top: -320px;
     left: -245px;
+  }
+  &__border{
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+border: 1px solid #00D5E4;
   }
 }
