@@ -34,7 +34,7 @@ header {
     @include flexfunction(row, center, space-between, wrap);
     &__list {
       position: absolute;
-      top:90px;
+      top: 90px;
       display: none;
       transform: translateX(-1000%);
       @include flexfunction(column, center, center, wrap);
@@ -66,7 +66,7 @@ header {
   border: 1px solid #7c7c7c;
 }
 .reduce {
-    @include flexfunction(row, end, space-between, wrap);
+  @include flexfunction(row, end, space-between, wrap);
   padding-top: 34px;
   &__title {
     max-width: 703px;
@@ -90,10 +90,21 @@ header {
     line-height: 126%;
     color: $white-color;
   }
-  .fon-nav{
+  .fon-nav {
     position: absolute;
     right: -100px;
     z-index: -1;
     top: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .reduce {
+    .fon-nav {
+      position: absolute;
+      right: 0px;
+      z-index: -1;
+      top: 0px;
+    }
   }
 }
