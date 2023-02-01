@@ -230,7 +230,32 @@
   max-width: 430px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #00D5E4;
+  border: 1px solid #00d5e4;
+  margin-bottom: 10px;
+}
+.device__btn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 126%;
+  text-align: center;
+  color: #00D5E4;
+  background: transparent;
+  border: none;
+  max-width: 378px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.device .arrow {
+  position: absolute;
+  right: 450px;
+  top: 350px;
+}
+.device .ccl {
+  display: column;
 }
 
 * {

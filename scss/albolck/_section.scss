@@ -105,7 +105,7 @@
   }
 }
 .device {
-    padding-top: 50px;
+  padding-top: 50px;
   position: relative;
   &__title {
     max-width: 720px;
@@ -120,7 +120,7 @@
     color: $white-color;
     padding-bottom: 30px;
   }
-  &__leni{
+  &__leni {
     color: $span-coor;
   }
   &__img {
@@ -128,10 +128,36 @@
     top: -320px;
     left: -245px;
   }
-  &__border{
+  &__border {
     max-width: 430px;
     width: 100%;
     margin: 0 auto;
-border: 1px solid #00D5E4;
+    border: 1px solid #00d5e4;
+     margin-bottom: 10px;
+  }
+  &__btn {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 126%;
+    text-align: center;
+    color: $span-coor;
+    background: transparent;
+    border: none;
+    max-width: 378px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .arrow{
+    position: absolute;
+    right:450px;
+    top: 350px;
+  }
+  .ccl {
+    display: column;
+   
   }
 }
