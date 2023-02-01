@@ -34,20 +34,31 @@ header {
     @include flexfunction(row, center, space-between, wrap);
     &__list {
       position: absolute;
-      top: 20px;
-    display: none;
-      left: 130px;
+      top: 80px;
+      display: none;
       transform: translateX(-1000%);
       @include flexfunction(column, center, center, wrap);
       transition: all 2s ease;
       gap: 36px;
+      background-color: #2d2d2d;
+      height: 100vh;
+    width: 100vw;
+    right: -20px;
+    &--item a{
+        font-size: 24px;
+      }
     }
-    .list1{
-transform: translateX(0);
-transition: all 2s ease;
+    .list1 {
+      transform: translateX(0);
+      transition: all 2s ease;
     }
     &__burger {
       display: block;
+      position: relative;
+      z-index: 11111111111;
+    }
+    &__logo{
+        z-index: 1111111111;
     }
   }
 }

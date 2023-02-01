@@ -77,9 +77,8 @@
   }
   .nav__list {
     position: absolute;
-    top: 20px;
+    top: 80px;
     display: none;
-    left: 130px;
     transform: translateX(-1000%);
     display: flex;
     flex-direction: column;
@@ -88,6 +87,13 @@
     flex-wrap: wrap;
     transition: all 2s ease;
     gap: 36px;
+    background-color: #2d2d2d;
+    height: 100vh;
+    width: 100vw;
+    right: -20px;
+  }
+  .nav__list--item a {
+    font-size: 24px;
   }
   .nav .list1 {
     transform: translateX(0);
@@ -95,6 +101,11 @@
   }
   .nav__burger {
     display: block;
+    position: relative;
+    z-index: 11111111111;
+  }
+  .nav__logo {
+    z-index: 1111111111;
   }
 }
 body {
