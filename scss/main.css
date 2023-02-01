@@ -13,6 +13,25 @@
   margin: 0 auto;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+.nav__burger {
+  display: none;
+}
+
 body {
   overflow-x: hidden;
   background-color: #575555;

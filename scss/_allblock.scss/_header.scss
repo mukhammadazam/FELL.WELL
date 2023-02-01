@@ -1,0 +1,10 @@
+.nav{
+    @include flexfunction (row,center,space-between,wrap);
+    &__list{
+        @include flexfunction (row,center,center,wrap);
+        gap: 36px;
+    }
+    &__burger{
+        display: none;
+    }
+}
