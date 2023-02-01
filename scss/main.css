@@ -156,6 +156,18 @@
     top: 0px;
   }
 }
+.img {
+  padding-top: 50px;
+}
+.img__png {
+  width: 1000px;
+  width: 100%;
+  display: block;
+}
+.img__svg {
+  max-width: 238px;
+}
+
 body {
   overflow-x: hidden;
   background-color: #575555;

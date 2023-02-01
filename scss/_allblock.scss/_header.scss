@@ -108,3 +108,16 @@ header {
     }
   }
 }
+
+.img {
+  padding-top: 50px;
+
+  &__png {
+    width: 1000px;
+    width: 100%;
+    display: block;
+  }
+  &__svg {
+    max-width: 238px;
+  }
+}
