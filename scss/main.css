@@ -149,7 +149,24 @@
   top: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .reduce {
+    padding-bottom: 130px;
+    position: relative;
+    left: 20px;
+  }
+  .reduce__text {
+    position: absolute;
+    top: 280px;
+    left: 180px;
+    padding-left: 60px;
+  }
+}
 @media screen and (max-width: 576px) {
+  .reduce__text {
+    position: static;
+    padding-left: 0px;
+  }
   .reduce .fon-nav {
     position: absolute;
     z-index: -1;
@@ -158,6 +175,7 @@
 }
 .img {
   padding-top: 50px;
+  position: relative;
 }
 .img__png {
   width: 1000px;
@@ -166,8 +184,23 @@
 }
 .img__svg {
   max-width: 238px;
+  position: absolute;
+  top: -20px;
+  left: 550px;
 }
 
+@media screen and (max-width: 768px) {
+  .img__png {
+    padding-left: 20px;
+  }
+  .img__svg {
+    max-width: 181px;
+    width: 100%;
+    position: static;
+    top: -50px;
+    left: 0px;
+  }
+}
 body {
   overflow-x: hidden;
   background-color: #575555;

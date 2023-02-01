@@ -44,6 +44,7 @@ header {
       height: 100vh;
       width: 100vw;
       right: -20px;
+      z-index: 11111111;
       &--item a {
         font-size: 24px;
       }
@@ -97,20 +98,41 @@ header {
     top: 0px;
   }
 }
+@media screen and (max-width: 768px) {
+  .reduce {
+    padding-bottom: 130px;
+    position: relative;
+    left: 20px;
+    &__text {
+      position:absolute;
+      top: 280px;
+      left: 180px;
+      padding-left: 60px;
+    }
+  }
+}
 
 @media screen and (max-width: 576px) {
   .reduce {
+ 
+    &__text {
+      position:static;
+      padding-left: 0px;
+    }
+
     .fon-nav {
       position: absolute;
 
       z-index: -1;
       top: 0px;
+   
     }
   }
 }
 
 .img {
   padding-top: 50px;
+  position: relative;
 
   &__png {
     width: 1000px;
@@ -119,5 +141,22 @@ header {
   }
   &__svg {
     max-width: 238px;
+    position: absolute;
+    top: -20px;
+    left: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img {
+    &__png{
+      padding-left: 20px;
+    }
+    &__svg {
+      max-width: 181px;
+      width: 100%;
+      position: static;
+      top: -50px;
+      left: 0px;
+    }
   }
 }
