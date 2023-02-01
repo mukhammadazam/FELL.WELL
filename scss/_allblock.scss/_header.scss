@@ -1,3 +1,5 @@
+header {
+}
 .nav {
   padding: 24px 0;
   @include flexfunction(row, center, space-between, wrap);
@@ -15,5 +17,37 @@
   }
   &__burger {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    @include flexfunction(row, center, center, wrap);
+    &__list {
+      @include flexfunction(row, center, center, wrap);
+      gap: 36px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    position: relative;
+    @include flexfunction(row, center, space-between, wrap);
+    &__list {
+      position: absolute;
+      top: 20px;
+    display: none;
+      left: 130px;
+      transform: translateX(-1000%);
+      @include flexfunction(column, center, center, wrap);
+      transition: all 2s ease;
+      gap: 36px;
+    }
+    .list1{
+transform: translateX(0);
+transition: all 2s ease;
+    }
+    &__burger {
+      display: block;
+    }
   }
 }
