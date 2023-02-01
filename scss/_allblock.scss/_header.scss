@@ -1,10 +1,19 @@
-.nav{
-    @include flexfunction (row,center,space-between,wrap);
-    &__list{
-        @include flexfunction (row,center,center,wrap);
-        gap: 36px;
+.nav {
+  padding: 24px 0;
+  @include flexfunction(row, center, space-between, wrap);
+  &__list {
+    @include flexfunction(row, center, center, wrap);
+    gap: 36px;
+    &--item a {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $white-color;
     }
-    &__burger{
-        display: none;
-    }
+  }
+  &__burger {
+    display: none;
+  }
 }
