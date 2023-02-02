@@ -350,6 +350,33 @@
     top: 18px;
   }
 }
+.bring {
+  padding-top: 108px;
+}
+.bring__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 141.5%;
+  color: #fff;
+  max-width: 821px;
+  padding-bottom: 15px;
+}
+.bring__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff;
+  max-width: 645px;
+}
+.bring__leni {
+  color: #00D5E4;
+  font-size: 26px;
+}
+
 * {
   margin: 0;
   text-decoration: none;

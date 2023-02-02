@@ -1,0 +1,26 @@
+.bring {
+    padding-top: 108px;
+  &__title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 141.5%;
+    color: $white-color;
+    max-width: 821px;
+    padding-bottom: 15px;
+  }
+  &__text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: $white-color;
+    max-width: 645px;
+  }
+  &__leni{
+    color: $span-coor;
+    font-size: 26px;
+  }
+}
