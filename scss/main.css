@@ -249,15 +249,49 @@
   margin: 0 auto;
   padding-bottom: 10px;
 }
-.device .arrow {
-  position: absolute;
-  right: 450px;
-  top: 350px;
-}
 .device .ccl {
+  position: relative;
   display: column;
 }
+.device .arrow {
+  position: absolute;
+  right: 440px;
+  top: 18px;
+}
 
+@media screen and (max-width: 768px) {
+  .device .ccl {
+    position: relative;
+    display: column;
+  }
+  .device .arrow {
+    position: absolute;
+    right: 120px;
+    top: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .device .ccl {
+    position: relative;
+    display: column;
+  }
+  .device .arrow {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .device .ccl {
+    position: relative;
+    display: column;
+  }
+  .device .arrow {
+    position: absolute;
+    right: -20px;
+    top: 18px;
+  }
+}
 * {
   margin: 0;
   text-decoration: none;

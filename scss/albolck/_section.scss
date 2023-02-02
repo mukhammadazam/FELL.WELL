@@ -133,7 +133,7 @@
     width: 100%;
     margin: 0 auto;
     border: 1px solid #00d5e4;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   &__btn {
     font-family: "Rubik";
@@ -151,13 +151,62 @@
     margin: 0 auto;
     padding-bottom: 10px;
   }
-  .arrow{
-    position: absolute;
-    right:450px;
-    top: 350px;
-  }
-  .ccl {
+   .ccl {
+    position: relative;
     display: column;
-   
   }
+  .arrow {
+    position: absolute;
+    right: 440px;
+    top: 18px;
+  }
+ 
+}
+@media screen and (max-width:768px) {
+  
+.device { 
+   .ccl {
+    position: relative;
+    display: column;
+  }
+  .arrow {
+    position: absolute;
+    right: 120px;
+    top: 18px;
+  }
+ 
+}
+
+}
+@media screen and (max-width:576px) {
+  
+.device { 
+   .ccl {
+    position: relative;
+    display: column;
+  }
+  .arrow {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+ 
+}
+
+}
+@media screen and (max-width:450px) {
+  
+.device { 
+   .ccl {
+    position: relative;
+    display: column;
+  }
+  .arrow {
+    position: absolute;
+    right: -20px;
+    top: 18px;
+  }
+ 
+}
+
 }
