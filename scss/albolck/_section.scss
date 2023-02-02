@@ -31,6 +31,9 @@
     top: 0px;
   }
 }
+.fon-nav1 {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .reduce {
     padding-bottom: 130px;
@@ -52,12 +55,37 @@
       position: static;
       padding-left: 0px;
     }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 16px;
+    }
 
     .fon-nav {
       position: absolute;
 
       z-index: -1;
       top: 0px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .reduce {
+    padding-bottom: 0px;
+    &__text {
+      position: static;
+      padding-left: 0px;
+    }
+
+    .fon-nav {
+      display: none;
+    }
+    .fon-nav1 {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: -90px;
     }
   }
 }
@@ -100,6 +128,15 @@
       width: 100%;
       position: absolute;
       top: 190px;
+      left: 280px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .img {
+    &__svg {
+      max-width: 120px;
+      top: 150px;
       left: 220px;
     }
   }
@@ -128,6 +165,9 @@
     top: -320px;
     left: -245px;
   }
+  &__img1 {
+    display: none;
+  }
   &__border {
     max-width: 430px;
     width: 100%;
@@ -151,7 +191,7 @@
     margin: 0 auto;
     padding-bottom: 10px;
   }
-   .ccl {
+  .ccl {
     position: relative;
     display: column;
   }
@@ -160,53 +200,59 @@
     right: 440px;
     top: 18px;
   }
- 
 }
-@media screen and (max-width:768px) {
-  
-.device { 
-   .ccl {
-    position: relative;
-    display: column;
+@media screen and (max-width: 768px) {
+  .device {
+    &__btn {
+      font-size: 14px;
+    }
+    .ccl {
+      position: relative;
+      display: column;
+    }
+    .arrow {
+      position: absolute;
+      right: 120px;
+      top: 18px;
+    }
   }
-  .arrow {
-    position: absolute;
-    right: 120px;
-    top: 18px;
-  }
- 
 }
-
-}
-@media screen and (max-width:576px) {
-  
-.device { 
-   .ccl {
-    position: relative;
-    display: column;
+@media screen and (max-width: 576px) {
+  .device {
+    .ccl {
+      position: relative;
+      display: column;
+    }
+    .arrow {
+      position: absolute;
+      right: 20px;
+      top: 18px;
+    }
   }
-  .arrow {
-    position: absolute;
-    right: 20px;
-    top: 18px;
-  }
- 
 }
-
-}
-@media screen and (max-width:450px) {
-  
-.device { 
-   .ccl {
-    position: relative;
-    display: column;
+@media screen and (max-width: 400px) {
+  .device {
+    &__img {
+      display: none;
+    }
+    &__img1 {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
   }
-  .arrow {
-    position: absolute;
-    right: -20px;
-    top: 18px;
-  }
- 
 }
-
+@media screen and (max-width: 450px) {
+  .device {
+    .ccl {
+      position: relative;
+      display: column;
+    }
+    .arrow {
+      position: absolute;
+      right: 0px;
+      top: 18px;
+    }
+  }
 }

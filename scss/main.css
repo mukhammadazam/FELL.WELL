@@ -98,6 +98,12 @@
   border: 1px solid #7c7c7c;
 }
 
+@media screen and (max-width: 400px) {
+  .nav__list {
+    width: 120vw;
+    left: -50px;
+  }
+}
 .reduce {
   display: flex;
   flex-direction: row;
@@ -136,6 +142,10 @@
   top: 0px;
 }
 
+.fon-nav1 {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .reduce {
     padding-bottom: 130px;
@@ -157,10 +167,34 @@
     position: static;
     padding-left: 0px;
   }
+  .reduce__title {
+    font-size: 30px;
+  }
+  .reduce__text {
+    font-size: 16px;
+  }
   .reduce .fon-nav {
     position: absolute;
     z-index: -1;
     top: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .reduce {
+    padding-bottom: 0px;
+  }
+  .reduce__text {
+    position: static;
+    padding-left: 0px;
+  }
+  .reduce .fon-nav {
+    display: none;
+  }
+  .reduce .fon-nav1 {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -90px;
   }
 }
 .img {
@@ -198,6 +232,13 @@
     width: 100%;
     position: absolute;
     top: 190px;
+    left: 280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img__svg {
+    max-width: 120px;
+    top: 150px;
     left: 220px;
   }
 }
@@ -225,6 +266,9 @@
   position: absolute;
   top: -320px;
   left: -245px;
+}
+.device__img1 {
+  display: none;
 }
 .device__border {
   max-width: 430px;
@@ -260,6 +304,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .device__btn {
+    font-size: 14px;
+  }
   .device .ccl {
     position: relative;
     display: column;
@@ -281,6 +328,17 @@
     top: 18px;
   }
 }
+@media screen and (max-width: 400px) {
+  .device__img {
+    display: none;
+  }
+  .device__img1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+}
 @media screen and (max-width: 450px) {
   .device .ccl {
     position: relative;
@@ -288,7 +346,7 @@
   }
   .device .arrow {
     position: absolute;
-    right: -20px;
+    right: 0px;
     top: 18px;
   }
 }

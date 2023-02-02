@@ -64,3 +64,11 @@
 .border {
   border: 1px solid #7c7c7c;
 }
+@media screen and (max-width: 400px) {
+  .nav {
+    &__list {
+      width: 120vw;
+      left: -50px;
+    }
+  }
+}
