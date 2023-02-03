@@ -5,6 +5,10 @@
       max-width: 467px;
       width: 100%;
     }
+    .fon--img{
+      position: absolute;
+      right: 0px;
+    }
   }
 }
 .bring {
@@ -76,17 +80,19 @@
       font-family: "Rubik";
       font-style: normal;
       font-weight: 900;
-      font-size: 45px;
+      font-size: 30px;
       line-height: 141.5%;
       color: $white-color;
       max-width: 821px;
+      text-align: center;
       padding-bottom: 15px;
     }
     &__text {
       font-family: "Rubik";
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 16px;
+      text-align: center;
       line-height: 120%;
       color: $white-color;
       max-width: 645px;
@@ -97,11 +103,7 @@
       font-size: 26px;
     }
     .grid-container {
-      max-width: 742px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      flex-wrap: wrap;
+      display: block;
     }
 
     .grid-item1 {
