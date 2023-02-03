@@ -538,6 +538,80 @@
     flex-wrap: wrap;
   }
 }
+.find {
+  padding: 50px 80px;
+  background: rgba(245, 245, 245, 0.04);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.find__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 140%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.find__list {
+  position: relative;
+}
+.find__list--item p {
+  padding-bottom: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.find__list--item p:hover {
+  color: #00D5E4;
+}
+.find__list .currency {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 200px;
+  background: #2d2d2d;
+  border: 1px solid #f5f5f5;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-right: 20px;
+}
+.find__list .currency:hover {
+  background-color: #00D5E4;
+}
+.find .click__list {
+  position: absolute;
+  left: 15px;
+  transform: translateX(-1000%);
+  transition: all 1s ease;
+  gap: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #00d5e4;
+}
+.find .click__list1 {
+  position: absolute;
+  left: 15px;
+  transform: translateX(0);
+  transition: all 1s ease;
+  gap: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #00d5e4;
+}
+
 body {
   overflow-x: hidden;
   background-color: #575555;
