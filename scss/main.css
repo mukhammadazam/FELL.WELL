@@ -587,7 +587,7 @@
 }
 .find .click__list {
   position: absolute;
-  left: 15px;
+  left: 0px;
   transform: translateX(-1000%);
   transition: all 1s ease;
   gap: 10px;
@@ -596,20 +596,18 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 140%;
-  color: #00d5e4;
+  color: #fff;
+  background: #575555;
+  border-radius: 5px;
+  padding: 5px 70px;
+}
+.find .click__list:hover {
+  color: #fff;
+  background: #00d5e4;
 }
 .find .click__list1 {
-  position: absolute;
-  left: 15px;
   transform: translateX(0);
   transition: all 1s ease;
-  gap: 10px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 140%;
-  color: #00d5e4;
 }
 
 body {
