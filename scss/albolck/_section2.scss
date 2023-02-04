@@ -153,8 +153,6 @@
     padding-bottom: 30px;
   }
   &__list {
-    @include flexfunction(row, center, center, wrap);
-    gap: 10px;
     &--item p {
       padding-bottom: 10px;
       font-family: "Rubik";
@@ -170,20 +168,7 @@
     .currency {
       position: relative;
       @include flexfunction(row, center, space-between, nowrap);
-      width: 200px;
-      background: #2d2d2d;
-      border: 1px solid #f5f5f5;
-      padding-left: 14px;
-      padding-top: 14px;
-      padding-right: 20px;
-      &:hover {
-        background-color: $span-coor;
-      }
-    }
-    .currency1 {
-      position: relative;
-      @include flexfunction(row, center, space-between, nowrap);
-      width: 200px;
+      max-width: 200px;
       background: #2d2d2d;
       border: 1px solid #f5f5f5;
       padding-left: 14px;
@@ -197,10 +182,10 @@
 
   .click__list {
     position: absolute;
-    left: 0px;
+    left: 176px;
     transform: translateX(-1000%);
     transition: all 1s ease;
-    gap: 10px;
+
     font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
@@ -209,7 +194,51 @@
     color: $white-color;
     background: $bg-color;
     border-radius: 5px;
-    padding: 5px 70px;
+    padding: 5px 60px;
+    &:hover {
+      color: $white-color;
+      background: #00d5e4;
+    }
+  }
+  .click__list1 {
+    transform: translateX(0);
+    transition: all 1s ease;
+  }
+}
+@media screen and (max-width: 768px) {
+  .find {
+    .click__list {
+      position: absolute;
+      left: 100px;
+
+      &:hover {
+        color: $white-color;
+        background: #00d5e4;
+      }
+    }
+    .click__list1 {
+      transform: translateX(0);
+      transition: all 1s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .click__list {
+    position: absolute;
+    left: 00px;
+    transform: translateX(-1000%);
+    transition: all 1s ease;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white-color;
+    background: $bg-color;
+    border-radius: 5px;
+    padding: 5px 60px;
     &:hover {
       color: $white-color;
       background: #00d5e4;
